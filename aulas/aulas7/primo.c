@@ -1,0 +1,27 @@
+#include <stdio.h>
+
+int main() {
+  int numero_primo;
+
+  printf("entrecom um numero > 0: ");
+  int deu_certo = scanf("%i", &numero_primo);
+  if (deu_certo && numero_primo > 0) {
+
+    int qtde_divisores = 0;
+    for (int i = 1; i <= numero_primo; i++) {
+
+      if (numero_primo % i == 0) {
+        qtde_divisores++;
+      }
+    }
+    if (qtde_divisores == 2) {
+      printf("o numero %i e primo\n", numero_primo);
+
+    } else {
+      printf("o numero %i nao e primo\n", numero_primo);
+    }
+  } else {
+    printf("numero invalido. tente de novo\n");
+  }
+  return 0;
+}
