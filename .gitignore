@@ -1,3 +1,7 @@
+.ccls-cache
+.replit
+replit.nix
+a.out
 # Build and Release Folders
 bin-debug/
 bin-release/
